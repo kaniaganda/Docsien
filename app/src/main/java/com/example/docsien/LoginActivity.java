@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
                     // Check if password matches
                     String passwordFromDB = snapshot.child(enteredUsername).child("password").getValue().toString();
                     if (enteredPassword.equals(passwordFromDB)) {
-                        Toast.makeText(LoginActivity.this, "Login success!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Login sukses!", Toast.LENGTH_SHORT).show();
 
                         // Log user in
                         String medication = snapshot.child(enteredPassword).child("medication").getValue().toString();
